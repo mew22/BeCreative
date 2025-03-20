@@ -31,3 +31,7 @@ include(
     ":core:db:gateway",
     ":core:db:implementation",
 )
+include(
+    ":feature:home:ui",
+    ":feature:home:lib",
+)
