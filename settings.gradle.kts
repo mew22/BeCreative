@@ -25,6 +25,7 @@ includeBuild("build-logic")
 include(":app")
 include(
     ":core:common",
+    ":core:ui",
     ":core:monitoring:gateway",
     ":core:monitoring:implementation",
     ":core:db:gateway",
