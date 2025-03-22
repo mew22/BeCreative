@@ -43,6 +43,7 @@ include(
 
 include(
     ":feature:mission:lib",
+    ":feature:mission:ui",
     ":feature:mission:domain",
     ":feature:mission:data",
 )

@@ -6,6 +6,7 @@ dependencies {
     implementation(projects.core.ui)
     implementation(projects.core.monitoring.gateway)
 
+    implementation(projects.feature.mission.ui)
     implementation(projects.feature.mission.domain)
     api(projects.feature.mission.data)
 }

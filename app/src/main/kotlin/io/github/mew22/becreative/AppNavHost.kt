@@ -6,6 +6,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import io.github.mew22.becreative.feature.home.HomeRoute
 import io.github.mew22.becreative.feature.home.homeScreen
+import io.github.mew22.becreative.feature.mission.achieveMissionScreen
+import io.github.mew22.becreative.feature.mission.guessMissionScreen
+import io.github.mew22.becreative.feature.mission.toAchieveMissionRoute
+import io.github.mew22.becreative.feature.mission.toGuessMissionRoute
 import kotlin.reflect.KClass
 
 @Composable
@@ -20,8 +24,10 @@ fun AppNavHost(
         startDestination = startDestination,
     ) {
         homeScreen(
-            toAchieveMission = {},
-            toGuessMission = {_ , _ ->},
+            toAchieveMission = navController::toAchieveMissionRoute,
+            toGuessMission = navController::toGuessMissionRoute,
         )
+        achieveMissionScreen(onBack = navController::popBackStack)
+        guessMissionScreen(onBack = navController::popBackStack)
     }
 }
