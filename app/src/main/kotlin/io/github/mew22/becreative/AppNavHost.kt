@@ -19,6 +19,9 @@ fun AppNavHost(
         navController = navController,
         startDestination = startDestination,
     ) {
-        homeScreen()
+        homeScreen(
+            toAchieveMission = {},
+            toGuessMission = {_ , _ ->},
+        )
     }
 }

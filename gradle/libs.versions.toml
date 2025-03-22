@@ -1,8 +1,9 @@
 [versions]
 agp = "8.8.2"
+cloudy = "0.2.6"
 kotlin = "2.1.20-RC"
 android-compileSdk = "35"
-android-minSdk = "24"
+android-minSdk = "28"
 android-targetSdk = "35"
 androidTools = "31.9.0"
 coreKtx = "1.15.0"
@@ -80,6 +81,7 @@ androidx-lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "life
 androidx-lifecycle-viewModelCompose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
 coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilCompose" }
+cloudy = { module = "com.github.skydoves:cloudy", version.ref = "cloudy" }
 # End
 
 # Koin

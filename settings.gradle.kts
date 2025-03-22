@@ -35,3 +35,14 @@ include(
     ":feature:home:ui",
     ":feature:home:lib",
 )
+include(
+    ":feature:feed:lib",
+    ":feature:feed:domain",
+    ":feature:feed:data",
+)
+
+include(
+    ":feature:mission:lib",
+    ":feature:mission:domain",
+    ":feature:mission:data",
+)

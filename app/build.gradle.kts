@@ -13,6 +13,8 @@ dependencies {
     implementation(projects.core.common)
 
     implementation(projects.feature.home.lib)
+    implementation(projects.feature.feed.lib)
+    implementation(projects.feature.mission.lib)
 
 
     implementation(libs.room.runtime)

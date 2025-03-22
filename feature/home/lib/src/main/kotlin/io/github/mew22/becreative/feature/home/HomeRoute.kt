@@ -16,13 +16,17 @@ fun NavController.toHomeRoute(navOptions: NavOptions? = null) {
     navigate(HomeRoute, navOptions)
 }
 
-fun NavGraphBuilder.homeScreen() {
+fun NavGraphBuilder.homeScreen(
+    toGuessMission: (missionId: String, imageUrl: String) -> Unit,
+    toAchieveMission: (missionId: String) -> Unit,
+) {
     composable<HomeRoute> {
         val viewModel = koinViewModel<HomeViewModel>()
         val state by viewModel.state.collectAsStateWithLifecycle()
         HomeScreen(
             state = state,
-            dispatch = viewModel::dispatch,
+            toGuessMission = toGuessMission,
+            toAchieveMission = toAchieveMission
         )
     }
 }
